@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-unity-tests-benchmark",
+  "version": "0.1.0",
+  "engines": {
+    "node": "20.5.1"
+  },
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test:node": "node index.node.spec.js",
+    "test:jest": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest index.jest.spec.js",
+    "test:mocha": "mocha index.mocha.spec.js --parallel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.6.2",
+    "mocha": "^10.2.0"
+  }
+}
